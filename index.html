@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ბილიკი — მცირე ჯგუფური მოგზაურობები</title>
+<meta name="description" content="ბილიკი გთავაზობთ დაგეგმილ, მცირე ჯგუფურ მოგზაურობებს საქართველოსა და მსოფლიოს ულამაზეს კუთხეებში.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">გვერდის შიგთავსზე გადასვლა</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-row">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <path d="M2 24C7 24 7 15 12 15C17 15 17 6 22 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="2" cy="24" r="2.4" fill="currentColor"/>
+        <circle cx="22" cy="6" r="2.4" fill="currentColor"/>
+      </svg>
+      <span>ბილიკი</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="მთავარი ნავიგაცია">
+      <a href="#philosophy">ჩვენ შესახებ</a>
+      <a href="#destinations">მიმართულებები</a>
+      <a href="#weather">ამინდი</a>
+      <a href="#stories">შთაბეჭდილებები</a>
+      <a href="#book" class="nav-cta">დაჯავშნა</a>
+    </nav>
+
+    <button class="burger" id="burgerBtn" aria-label="მენიუს გახსნა" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker">მცირე ჯგუფური მოგზაურობები</p>
+        <h1>ყოველი კარგი მოგზაურობა <em>ერთი ბილიკით</em> იწყება</h1>
+        <p class="hero-lede">ჩვენ ვგეგმავთ მარშრუტებს არაუმეტეს 8 კაციან ჯგუფებში — მთის სოფლებიდან ევროპულ ქალაქებამდე — ისე, რომ დრო არასდროს დარჩეს ავტობუსში, გატარებული სანახავზე მეტ ხანს.</p>
+        <div class="hero-actions">
+          <a href="#destinations" class="btn btn-primary">მიმართულებების ნახვა</a>
+          <a href="#philosophy" class="btn btn-ghost">როგორ ვმუშაობთ</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>11</dt><dd>საქართველოს მხარე</dd></div>
+          <div><dt>8</dt><dd>მაქსიმუმ კაცი ჯგუფში</dd></div>
+          <div><dt>11</dt><dd>წელი გამოცდილება</dd></div>
+        </dl>
+      </div>
+
+      <figure class="hero-figure" aria-hidden="true">
+        <svg id="routeSvg" viewBox="0 0 420 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="route-line line-1" d="M40 420 C 120 420, 90 340, 160 320 S 230 250 210 190" stroke="#C08A2E" stroke-width="3" stroke-linecap="round"/>
+          <path class="route-line line-2" d="M210 190 C 260 170, 250 110, 320 90 S 390 60 380 20" stroke="#5B6E52" stroke-width="3" stroke-linecap="round"/>
+          <path class="route-line line-3" d="M60 60 C 90 90, 70 140, 120 150" stroke="#16262A" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+          <circle class="route-dot" cx="40" cy="420" r="6" fill="#9C4A32"/>
+          <circle class="route-dot" cx="210" cy="190" r="5" fill="#C08A2E"/>
+          <circle class="route-dot" cx="380" cy="20" r="6" fill="#5B6E52"/>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY / HOW WE WORK -->
+  <section class="philosophy" id="philosophy">
+    <div class="wrap philosophy-grid">
+      <div class="philosophy-intro">
+        <p class="section-label">ჩვენი მიდგომა</p>
+        <h2>დაგეგმვას ვანდობთ ადგილობრივებს, არა კატალოგს</h2>
+        <p>ყოველი მარშრუტი შედგენილია იმ ადამიანების მიერ, ვინც ამ ადგილას ცხოვრობს ან წლების განმავლობაში დადის იქ რეგულარულად. აქედან გამომდინარეობს ის, რასაც გთავაზობთ: ნაკლები გაჩერება, მეტი დრო თითოეულ ადგილას.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <h3>ირჩევთ მიმართულებას</h3>
+          <p>ვეხმარებით მხარის მიხედვით — რაჭიდან აჭარამდე, კახეთიდან სვანეთამდე.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <h3>ვგეგმავთ ერთად</h3>
+          <p>მარშრუტს ვარგებთ ჯგუფის ტემპსა და სეზონურ პირობებზე.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <h3>მიდიხართ მშვიდად</h3>
+          <p>ლოგისტიკა, ღამისთევა და გიდი უკვე მოგვარებულია თქვენს გარეშეც.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="destinations" id="destinations">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="section-label">მიმართულებები</p>
+        <h2>აირჩიეთ მხარის მიხედვით</h2>
+      </div>
+
+      <div class="dest-grid" id="destGrid">
+
+        <article class="dest-card">
+          <img src="./images/Tbilisi.jpg" alt="თბილისი" loading="lazy">
+          <div class="dest-body">
+            <h3>თბილისი</h3>
+            <p>დედაქალაქი, ძველი უბნები, გოგირდის აბანოები და თანამედროვე არქიტექტურა ერთ ხედში.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Awara, Batumi.jpg" alt="აჭარა" loading="lazy">
+          <div class="dest-body">
+            <h3>აჭარა</h3>
+            <p>ბათუმი და შავი ზღვის სანაპირო, სუბტროპიკული ბუნება.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Guria.jpg" alt="გურია" loading="lazy">
+          <div class="dest-body">
+            <h3>გურია</h3>
+            <p>მწვანე ბორცვები, ჩაის პლანტაციები და მშვიდი სოფლური პეიზაჟები.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Imereti qutaisi.jpg" alt="იმერეთი" loading="lazy">
+          <div class="dest-body">
+            <h3>იმერეთი</h3>
+            <p>ქუთაისი, პროშუთეთის მღვიმეები და ოკაცეს კანიონი.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/kaxeti.jpg" alt="კახეთი" loading="lazy">
+          <div class="dest-body">
+            <h3>კახეთი</h3>
+            <p>ღვინის რეგიონი, ალაზნის ველი და კავკასიონის ხედები.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Mcxeta-mtianeti.jpg" alt="მცხეთა-მთიანეთი" loading="lazy">
+          <div class="dest-body">
+            <h3>მცხეთა-მთიანეთი</h3>
+            <p>ძველი დედაქალაქი მცხეთა, ჯვრის მონასტერი და ყაზბეგის მთები.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Rawa-lechxumi.jpg" alt="რაჭა-ლეჩხუმი" loading="lazy">
+          <div class="dest-body">
+            <h3>რაჭა-ლეჩხუმი</h3>
+            <p>მაღალი მთები, ტყიანი ხეობები და ცნობილი ხვანჭკარას ღვინო.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Samegrelo-zemo svaneti.webp" alt="სამეგრელო-ზემო სვანეთი" loading="lazy">
+          <div class="dest-body">
+            <h3>სამეგრელო-ზემო სვანეთი</h3>
+            <p>მარტვილის კანიონი, სვანური კოშკები და მდინარეების ველური ხეობები.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Samcxe-javaxeti.jpeg" alt="სამცხე-ჯავახეთი" loading="lazy">
+          <div class="dest-body">
+            <h3>სამცხე-ჯავახეთი</h3>
+            <p>ვარძიის კლდეში ნაკვეთი ქალაქი და ვულკანური პლატოს ტბები.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Qvemo qartli.jpg" alt="ქვემო ქართლი" loading="lazy">
+          <div class="dest-body">
+            <h3>ქვემო ქართლი</h3>
+            <p>დავით გარეჯას სამონასტრო კომპლექსი და ნახევრად უდაბნოს პეიზაჟები.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="./images/Shida qartli.jpg" alt="შიდა ქართლი" loading="lazy">
+          <div class="dest-body">
+            <h3>შიდა ქართლი</h3>
+            <p>გორის ციხე, უფლისციხის კლდეში გამოკვეთილი ქალაქი.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEATHER -->
+  <section class="weather" id="weather">
+    <div class="wrap weather-grid">
+      <div class="weather-intro">
+        <p class="section-label section-label-light">დაგეგმვის დახმარება</p>
+        <h2>ნახეთ, რა ამინდია გზაზე</h2>
+        <p>აირჩიეთ მიმართულება — მონაცემს პირდაპირ ვიღებთ ღია, უფასო ამინდის სერვისიდან.</p>
+
+        <label for="weatherSelect" class="weather-label">მიმართულება</label>
+        <select id="weatherSelect" class="weather-select">
+          <option value="41.7151,44.8271" data-name="თბილისი">თბილისი</option>
+          <option value="41.6168,41.6367" data-name="ბათუმი, აჭარა">ბათუმი, აჭარა</option>
+          <option value="41.9247,42.0068" data-name="ოზურგეთი, გურია">ოზურგეთი, გურია</option>
+          <option value="42.2679,42.7061" data-name="ქუთაისი, იმერეთი">ქუთაისი, იმერეთი</option>
+          <option value="41.9186,45.4736" data-name="თელავი, კახეთი">თელავი, კახეთი</option>
+          <option value="41.8452,44.7215" data-name="მცხეთა">მცხეთა</option>
+          <option value="42.5217,43.1506" data-name="ამბროლაური, რაჭა">ამბროლაური, რაჭა</option>
+          <option value="42.5088,41.8709" data-name="ზუგდიდი, სამეგრელო">ზუგდიდი, სამეგრელო</option>
+          <option value="41.6394,42.9836" data-name="ახალციხე, სამცხე-ჯავახეთი">ახალციხე, სამცხე-ჯავახეთი</option>
+          <option value="41.5495,45.0093" data-name="რუსთავი, ქვემო ქართლი">რუსთავი, ქვემო ქართლი</option>
+          <option value="41.9847,44.1114" data-name="გორი, შიდა ქართლი">გორი, შიდა ქართლი</option>
+        </select>
+      </div>
+
+      <div class="weather-readout" id="weatherReadout" aria-live="polite">
+        <p class="weather-status" id="weatherStatus">იტვირთება…</p>
+        <div class="weather-main" id="weatherMain" hidden>
+          <span class="weather-temp" id="weatherTemp">—</span>
+          <div class="weather-details">
+            <p id="weatherCondition">—</p>
+            <p id="weatherWind">—</p>
+            <p class="weather-place" id="weatherPlace">—</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="stories" id="stories">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="section-label">შთაბეჭდილებები</p>
+        <h2>რას ამბობენ ჩვენი მოგზაურები</h2>
+      </div>
+
+      <div class="splide" id="storySlider" aria-label="მოგზაურების შთაბეჭდილებები">
+        <div class="splide__track">
+          <ul class="splide__list">
+
+            <li class="splide__slide">
+              <article class="postcard">
+                <p>„ჯგუფი მხოლოდ 6 კაცი ვიყავით — გიდმა იცოდა ყველას სახელი მეორე დღეს უკვე. სვანეთში ისეთ ადგილებში წაგვიყვანა, სადაც მარტო ვერასდროს ვიპოვიდით.“</p>
+                <footer>— ნინო, სვანეთის ტური</footer>
+              </article>
+            </li>
+
+            <li class="splide__slide">
+              <article class="postcard">
+                <p>„არხოტის ხეობაში სამი დღე ვიარეთ ისეთ ადგილებში, სადაც ტელეფონსაც კი აზრი არ ჰქონდა ამოეღო — მთელი გზა მხოლოდ მთები და სიჩუმე იყო.“</p>
+                <footer>— გიორგი, არხოტის ტური</footer>
+              </article>
+            </li>
+
+            <li class="splide__slide">
+              <article class="postcard">
+                <p>„ყაზბეგში ამინდის გამო მარშრუტი ერთი დღით შეცვალეს — წინასწარ გვქონდა გაფრთხილება და ალტერნატივაც მზად იყო. არაფერი დაგვკარგვია.“</p>
+                <footer>— თამარ, ყაზბეგის ტური</footer>
+              </article>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING / NEWSLETTER -->
+  <section class="book" id="book">
+    <div class="wrap book-grid">
+      <div class="book-intro">
+        <p class="section-label section-label-light">დაჯავშნა</p>
+        <h2>დაგვიტოვეთ მოთხოვნა</h2>
+        <p>დაგვიწერეთ, რომელი მიმართულება გაინტერესებთ — 24 საათში დაგიკავშირდებით თავისუფალი თარიღებით.</p>
+      </div>
+
+      <form class="book-form" id="bookForm" novalidate>
+        <div class="field">
+          <label for="name">სახელი</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">ელფოსტა</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="dest">მიმართულება</label>
+          <select id="dest" name="dest">
+            <option value="თბილისი">თბილისი</option>
+            <option value="აჭარა">აჭარა</option>
+            <option value="გურია">გურია</option>
+            <option value="იმერეთი">იმერეთი</option>
+            <option value="კახეთი">კახეთი</option>
+            <option value="მცხეთა-მთიანეთი">მცხეთა-მთიანეთი</option>
+            <option value="რაჭა-ლეჩხუმი">რაჭა-ლეჩხუმი</option>
+            <option value="სამეგრელო-ზემო სვანეთი">სამეგრელო-ზემო სვანეთი</option>
+            <option value="სამცხე-ჯავახეთი">სამცხე-ჯავახეთი</option>
+            <option value="ქვემო ქართლი">ქვემო ქართლი</option>
+            <option value="შიდა ქართლი">შიდა ქართლი</option>
+          </select>
+        </div>
+        <div class="field field-wide">
+          <label for="message">კომენტარი (არასავალდებულო)</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">მოთხოვნის გაგზავნა</button>
+        <p class="form-confirm" id="formConfirm" role="status" hidden>მადლობა! მოთხოვნა მიღებულია, მალე დაგიკავშირდებით.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand"><svg width="24" height="24" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M2 24C7 24 7 15 12 15C17 15 17 6 22 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg> ბილიკი</span>
+      <p>მცირე ჯგუფური მოგზაურობები საქართველოსა და მსოფლიოში, 2015 წლიდან.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="ქვედა ნავიგაცია">
+      <a href="#philosophy">ჩვენ შესახებ</a>
+      <a href="#destinations">მიმართულებები</a>
+      <a href="#weather">ამინდი</a>
+      <a href="#book">დაჯავშნა</a>
+    </nav>
+
+    <form class="newsletter" id="newsletterForm">
+      <label for="newsletterEmail">გამოიწერეთ ახალი მარშრუტები</label>
+      <div class="newsletter-row">
+        <input type="email" id="newsletterEmail" placeholder="თქვენი ელფოსტა" required>
+        <button type="submit">გამოწერა</button>
+      </div>
+      <p class="newsletter-note" id="newsletterNote" aria-live="polite"></p>
+    </form>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© 2026 ბილიკი. ყველა უფლება დაცულია.</p>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" hidden>
+  <p>საიტი იყენებს მინიმალურ ქუქი-ფაილებს გამოცდილების გასაუმჯობესებლად.</p>
+  <button id="cookieAccept" class="btn btn-primary btn-small">კარგი, გასაგებია</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
